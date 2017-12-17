@@ -2,6 +2,9 @@ import React from 'react';
 import { Menu, Icon, Switch, Layout } from 'antd';
 import {allMenu}  from "./slibe_menu"
 import './App.less';
+import Top from "./header";
+import Footer from './bottom';
+import Contents from "./content";
 
 const SubMenu = Menu.SubMenu;
 const { Sider } = Layout
@@ -64,7 +67,9 @@ export default class App extends React.Component {
                 </div>
             </Sider>
             <Layout>
-
+                <Top/>
+                <Contents />
+                <Footer/>
             </Layout>
         </Layout>
     );
